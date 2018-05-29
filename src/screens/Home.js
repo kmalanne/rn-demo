@@ -20,6 +20,8 @@ const data = [
   { title: 'List', screen: 'ListComponent' },
   { title: 'Animation', screen: 'Animation' },
   { title: 'Gesture', screen: 'Gesture' },
+  { title: 'AsyncStorage', screen: 'Storage' },
+  { title: 'Networking', screen: 'Networking' },
 ];
 
 const styles = StyleSheet.create({
@@ -37,6 +39,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'forestgreen',
     borderRadius: 5,
   },
+  itemText: {
+    fontSize: 20,
+  },
 });
 
 class MyListItem extends Component {
@@ -48,7 +53,7 @@ class MyListItem extends Component {
     return (
       <TouchableOpacity style={styles.listItem} onPress={this.onPress}>
         <View>
-          <Text>{this.props.title}</Text>
+          <Text style={styles.itemText}>{this.props.title}</Text>
         </View>
       </TouchableOpacity>
     );
