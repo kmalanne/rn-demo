@@ -12,8 +12,9 @@ import ScrollViewComponent from './screens/ScrollViewComponent';
 import ListComponent from './screens/ListComponent';
 import Animation from './screens/Animation';
 import Gesture from './screens/Gesture';
-import AStorage from './screens/AStorage';
+import MyAsyncStorage from './screens/AsyncStorage';
 import Networking from './screens/Networking';
+import MyPlatform from './screens/Platform';
 
 export default createStackNavigator(
   {
@@ -56,11 +57,14 @@ export default createStackNavigator(
     Gesture: {
       screen: Gesture,
     },
-    Storage: {
-      screen: AStorage,
+    AsyncStorage: {
+      screen: MyAsyncStorage,
     },
     Networking: {
       screen: Networking,
+    },
+    Platform: {
+      screen: MyPlatform,
     },
   },
   {

@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class AStorage extends Component {
+export default class MyAyncStorage extends Component {
   constructor(props) {
     super(props);
     this.state = { text: '' };

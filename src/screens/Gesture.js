@@ -66,7 +66,7 @@ export default class Gesture extends Component {
   // Activate pan responder when square is pressed
   handleStartShouldSetPanResponder = () => true;
 
-  // Responder status actiavted
+  // Responder status activated
   handlePanResponderGrant = () => {
     this.setState({ dragging: true });
   };

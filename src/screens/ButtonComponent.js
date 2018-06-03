@@ -15,10 +15,18 @@ export default class ButtonComponent extends Component {
           onPress={() => Alert.alert('You tapped the button!')}
         />
         <TouchableHighlight
-          style={{ backgroundColor: 'green' }}
+          style={{
+            backgroundColor: 'green',
+            padding: 10,
+            margin: 20,
+            borderRadius: 10,
+            borderWidth: 3,
+            borderColor: 'black',
+            alignItems: 'center',
+          }}
           onPress={() => Alert.alert('You tapped the touchable!')}
         >
-          <Text>No, hit me!</Text>
+          <Text style={{ fontSize: 20 }}>No, hit me!</Text>
         </TouchableHighlight>
       </View>
     );

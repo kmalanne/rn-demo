@@ -20,8 +20,9 @@ const data = [
   { title: 'List', screen: 'ListComponent' },
   { title: 'Animation', screen: 'Animation' },
   { title: 'Gesture', screen: 'Gesture' },
-  { title: 'AsyncStorage', screen: 'Storage' },
+  { title: 'AsyncStorage', screen: 'AsyncStorage' },
   { title: 'Networking', screen: 'Networking' },
+  { title: 'Platform', screen: 'Platform' },
 ];
 
 const styles = StyleSheet.create({
